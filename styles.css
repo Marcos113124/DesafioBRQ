@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(244, 103, 103);
+    background-image: url(bg-intro-desktop.png);
+}
+
+:root {
+    --vermelho: hsl(0, 100%, 74%);
+    --verde: hsl(154, 59%, 51%);
+    --azul: hsl(248, 32%, 49%);
+    --azul-escuro: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --branco-principal: #fefefe;
+    --preto: #000000;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-texto {
+    width: 500px;
+    margin-right:4.5rem;
+    color: white;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+.texto-principal{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.try-it-free {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 45, 194);
+    border-radius: 11px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.3em;
+    box-shadow: 0px 8px 5px 0px rgba(10,10,10,0.39);
+    width: 510px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.try-it-free:hover{
+    cursor: pointer;
+}
+
+.try-it-free a{
+    color: white;
+}
+
+form{
+    margin-top: 25px;
+    background-color: white;
+    width: 550px;
+    display: flex;
+    padding-top: 0.6rem;
+    height: 480px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-right: 50px;
+    box-shadow: 0px 8px 5px 0px rgba(10,10,10,0.39);
+}
+
+.container-botao {
+    background-color: rgb(42, 133, 42);
+    color: white;
+    width: 90%;
+    height: 50px;
+    border-radius: 9px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1.6rem auto 0 auto;
+    transition: 2s;
+}
+
+form label {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-top: 20px;
+    padding: 1em;
+    border-radius: 4px;
+    border: 0.1px solid;
+    font-size: 16px;
+    width: 80%;
+}
+
+input:focus {
+    outline: 3px solid;
+    font-weight: bold;
+}
+
+.container-botao:hover {
+    background: darkgreen;
+}
+
+.terms-and-services {
+    text-align: center;
+    font-size:12px;
+    color: rgb(41, 41, 65);
+    margin: 0.9rem auto;
+}
+
+.terms-and-services a {
+    text-decoration: none;
+    color: rgb(194, 40, 40);
+    font-weight: bold;
+}
+
+    @media screen and (min-width: 360px) and (max-width: 720px) { 
+.try-it-free{
+    width: 90%;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1rem;
+     height: 6rem;
+     line-height: 26px;
+ }
+.titulo-principal{
+     text-align: center;
+     font-size: 1.8rem;
+}
+.texto-principal{
+    text-align: center;
+     font-size: 1rem;
+      line-height: 24px;
+ }
+ form{
+     width: 90%;
+     padding: 0.1rem 1rem;
+  }
+    .try-it-free a{
+     padding: 3rem;
+ }
+  input{
+     width: 70%;
+ }
+ .container-botao{
+    width: 83%;
+     font-weight: 700;
+ } 
+ .terms-and-services{
+    padding: 0 1.2rem;
+    line-height: 20px;
+ }
